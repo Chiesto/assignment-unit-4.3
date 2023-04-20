@@ -69,7 +69,7 @@ console.log("Should show true and add my item:", addItem("banana", basket));
 console.log("Should show false as my array is too big:", addItem("banana", ['apple','blueberry','taco','sauce','steak','chicken']));
 //test updated addItem
 //4.
-basket = ['apple','banana','blueberry'];
+basket = ['apple','banana','blueberry'];//updated the basket in order to test it easier.
 function removeItem(item,array){
     for (let i=0; i<array.length; i++){
         if (array[i]===item){
@@ -79,6 +79,7 @@ function removeItem(item,array){
     }
     return null;
 }
+//end removeItem
 console.log(`Basket is ${listItems(basket)}`);
 console.log("should remove banana from my array and show it:", removeItem('banana',basket));
 console.log(`Basket is now ${listItems(basket)}`);
@@ -86,3 +87,4 @@ console.log("should remove apple from my array and show it:", removeItem('apple'
 console.log(`Basket is now ${listItems(basket)}`);
 console.log("should show 'null' as 'apple' isn't in my basket:", removeItem('apple',basket));
 console.log(`Basket is ${listItems(basket)}`);
+//test removeItem (using listItems for fun)
